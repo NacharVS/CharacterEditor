@@ -29,6 +29,7 @@ namespace CharacterCreator
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -81,6 +82,7 @@ namespace CharacterCreator
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label24 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -98,9 +100,10 @@ namespace CharacterCreator
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(509, 30);
+            this.label1.Location = new System.Drawing.Point(594, 35);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(327, 28);
             this.label1.TabIndex = 0;
@@ -114,19 +117,21 @@ namespace CharacterCreator
             "Warrior",
             "Mage",
             "Archer"});
-            this.comboBox1.Location = new System.Drawing.Point(514, 62);
+            this.comboBox1.Location = new System.Drawing.Point(600, 72);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.comboBox1.Size = new System.Drawing.Size(322, 21);
+            this.comboBox1.Size = new System.Drawing.Size(375, 23);
             this.comboBox1.TabIndex = 1;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // pictureBox1
             // 
-            
-            this.pictureBox1.Location = new System.Drawing.Point(933, 30);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(1092, 57);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(391, 537);
+            this.pictureBox1.Size = new System.Drawing.Size(384, 324);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -134,12 +139,12 @@ namespace CharacterCreator
             // 
             // pictureBox2
             // 
-            
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-     
-            this.pictureBox2.Location = new System.Drawing.Point(933, 30);
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(1092, 57);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(381, 537);
+            this.pictureBox2.Size = new System.Drawing.Size(384, 324);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
@@ -147,11 +152,12 @@ namespace CharacterCreator
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.LimeGreen;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.Cornsilk;
-            this.button1.Location = new System.Drawing.Point(749, 247);
+            this.button1.Location = new System.Drawing.Point(874, 285);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(59, 50);
+            this.button1.Size = new System.Drawing.Size(69, 58);
             this.button1.TabIndex = 4;
             this.button1.Text = "+";
             this.button1.UseVisualStyleBackColor = false;
@@ -160,11 +166,12 @@ namespace CharacterCreator
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Crimson;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button2.ForeColor = System.Drawing.Color.Cornsilk;
-            this.button2.Location = new System.Drawing.Point(558, 247);
+            this.button2.Location = new System.Drawing.Point(651, 285);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(59, 50);
+            this.button2.Size = new System.Drawing.Size(69, 58);
             this.button2.TabIndex = 5;
             this.button2.Text = "-";
             this.button2.UseVisualStyleBackColor = false;
@@ -172,10 +179,11 @@ namespace CharacterCreator
             // 
             // button3
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft YaHei", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(504, 470);
+            this.button3.Font = new System.Drawing.Font("Microsoft YaHei", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button3.Location = new System.Drawing.Point(588, 542);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(382, 76);
+            this.button3.Size = new System.Drawing.Size(446, 88);
             this.button3.TabIndex = 6;
             this.button3.Text = "Start";
             this.button3.UseVisualStyleBackColor = true;
@@ -184,8 +192,9 @@ namespace CharacterCreator
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(649, 176);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(757, 203);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(48, 20);
             this.label2.TabIndex = 7;
@@ -194,8 +203,9 @@ namespace CharacterCreator
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(636, 230);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(742, 265);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(82, 20);
             this.label3.TabIndex = 8;
@@ -204,8 +214,9 @@ namespace CharacterCreator
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(636, 277);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(742, 320);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(83, 20);
             this.label4.TabIndex = 9;
@@ -215,8 +226,9 @@ namespace CharacterCreator
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(623, 333);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(727, 384);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(120, 20);
             this.label5.TabIndex = 10;
@@ -225,11 +237,12 @@ namespace CharacterCreator
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.LimeGreen;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button5.ForeColor = System.Drawing.Color.Cornsilk;
-            this.button5.Location = new System.Drawing.Point(749, 200);
+            this.button5.Location = new System.Drawing.Point(874, 231);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(59, 50);
+            this.button5.Size = new System.Drawing.Size(69, 58);
             this.button5.TabIndex = 11;
             this.button5.Text = "+";
             this.button5.UseVisualStyleBackColor = false;
@@ -238,11 +251,12 @@ namespace CharacterCreator
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.Crimson;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button4.ForeColor = System.Drawing.Color.Cornsilk;
-            this.button4.Location = new System.Drawing.Point(558, 200);
+            this.button4.Location = new System.Drawing.Point(651, 231);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(59, 50);
+            this.button4.Size = new System.Drawing.Size(69, 58);
             this.button4.TabIndex = 12;
             this.button4.Text = "-";
             this.button4.UseVisualStyleBackColor = false;
@@ -251,11 +265,12 @@ namespace CharacterCreator
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.LimeGreen;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button7.ForeColor = System.Drawing.Color.Cornsilk;
-            this.button7.Location = new System.Drawing.Point(749, 148);
+            this.button7.Location = new System.Drawing.Point(874, 171);
+            this.button7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(59, 50);
+            this.button7.Size = new System.Drawing.Size(69, 58);
             this.button7.TabIndex = 13;
             this.button7.Text = "+";
             this.button7.UseVisualStyleBackColor = false;
@@ -264,11 +279,12 @@ namespace CharacterCreator
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.Crimson;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button6.ForeColor = System.Drawing.Color.Cornsilk;
-            this.button6.Location = new System.Drawing.Point(558, 148);
+            this.button6.Location = new System.Drawing.Point(651, 171);
+            this.button6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(59, 50);
+            this.button6.Size = new System.Drawing.Size(69, 58);
             this.button6.TabIndex = 14;
             this.button6.Text = "-";
             this.button6.UseVisualStyleBackColor = false;
@@ -277,11 +293,12 @@ namespace CharacterCreator
             // button9
             // 
             this.button9.BackColor = System.Drawing.Color.LimeGreen;
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button9.ForeColor = System.Drawing.Color.Cornsilk;
-            this.button9.Location = new System.Drawing.Point(749, 303);
+            this.button9.Location = new System.Drawing.Point(874, 350);
+            this.button9.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(59, 50);
+            this.button9.Size = new System.Drawing.Size(69, 58);
             this.button9.TabIndex = 15;
             this.button9.Text = "+";
             this.button9.UseVisualStyleBackColor = false;
@@ -290,11 +307,12 @@ namespace CharacterCreator
             // button8
             // 
             this.button8.BackColor = System.Drawing.Color.Crimson;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button8.ForeColor = System.Drawing.Color.Cornsilk;
-            this.button8.Location = new System.Drawing.Point(558, 303);
+            this.button8.Location = new System.Drawing.Point(651, 350);
+            this.button8.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(59, 50);
+            this.button8.Size = new System.Drawing.Size(69, 58);
             this.button8.TabIndex = 16;
             this.button8.Text = "-";
             this.button8.UseVisualStyleBackColor = false;
@@ -303,44 +321,49 @@ namespace CharacterCreator
             // textBox1
             // 
             this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(627, 310);
+            this.textBox1.Location = new System.Drawing.Point(732, 358);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.Size = new System.Drawing.Size(116, 23);
             this.textBox1.TabIndex = 17;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
             this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(627, 254);
+            this.textBox2.Location = new System.Drawing.Point(732, 293);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.Size = new System.Drawing.Size(116, 23);
             this.textBox2.TabIndex = 18;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox3
             // 
             this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(627, 207);
+            this.textBox3.Location = new System.Drawing.Point(732, 239);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.Size = new System.Drawing.Size(116, 23);
             this.textBox3.TabIndex = 19;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox4
             // 
             this.textBox4.Enabled = false;
-            this.textBox4.Location = new System.Drawing.Point(627, 153);
+            this.textBox4.Location = new System.Drawing.Point(732, 177);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
+            this.textBox4.Size = new System.Drawing.Size(116, 23);
             this.textBox4.TabIndex = 20;
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(526, 388);
+            this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(614, 448);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(310, 31);
             this.label6.TabIndex = 21;
@@ -349,8 +372,9 @@ namespace CharacterCreator
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(842, 394);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(982, 455);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(30, 24);
             this.label7.TabIndex = 22;
@@ -359,19 +383,22 @@ namespace CharacterCreator
             // 
             // pictureBox3
             // 
-           
-            this.pictureBox3.Location = new System.Drawing.Point(892, 30);
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(1082, 57);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(471, 537);
+            this.pictureBox3.Size = new System.Drawing.Size(413, 324);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 23;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label12.Location = new System.Drawing.Point(71, 56);
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label12.Location = new System.Drawing.Point(83, 65);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(70, 24);
             this.label12.TabIndex = 31;
@@ -381,10 +408,11 @@ namespace CharacterCreator
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(3, 16);
+            this.label8.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(4, 18);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(151, 23);
+            this.label8.Size = new System.Drawing.Size(152, 23);
             this.label8.TabIndex = 24;
             this.label8.Text = "Физическая атака";
             // 
@@ -394,17 +422,19 @@ namespace CharacterCreator
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label12);
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel1.Location = new System.Drawing.Point(35, 42);
+            this.panel1.Location = new System.Drawing.Point(41, 48);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 100);
+            this.panel1.Size = new System.Drawing.Size(233, 115);
             this.panel1.TabIndex = 28;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label13.Location = new System.Drawing.Point(67, 56);
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label13.Location = new System.Drawing.Point(78, 65);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(70, 24);
             this.label13.TabIndex = 32;
@@ -413,10 +443,11 @@ namespace CharacterCreator
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(3, 16);
+            this.label9.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label9.Location = new System.Drawing.Point(4, 18);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(148, 23);
+            this.label9.Size = new System.Drawing.Size(149, 23);
             this.label9.TabIndex = 25;
             this.label9.Text = "Магическая атака";
             // 
@@ -426,18 +457,20 @@ namespace CharacterCreator
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label13);
             this.panel2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel2.Location = new System.Drawing.Point(241, 42);
+            this.panel2.Location = new System.Drawing.Point(281, 48);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 100);
+            this.panel2.Size = new System.Drawing.Size(233, 115);
             this.panel2.TabIndex = 29;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(3, 11);
+            this.label11.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label11.Location = new System.Drawing.Point(4, 13);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(161, 23);
+            this.label11.Size = new System.Drawing.Size(162, 23);
             this.label11.TabIndex = 27;
             this.label11.Text = "Магическая защита";
             this.label11.Click += new System.EventHandler(this.label11_Click);
@@ -445,8 +478,9 @@ namespace CharacterCreator
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label15.Location = new System.Drawing.Point(67, 57);
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label15.Location = new System.Drawing.Point(78, 66);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(70, 24);
             this.label15.TabIndex = 34;
@@ -458,16 +492,18 @@ namespace CharacterCreator
             this.panel3.Controls.Add(this.label15);
             this.panel3.Controls.Add(this.label11);
             this.panel3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel3.Location = new System.Drawing.Point(241, 153);
+            this.panel3.Location = new System.Drawing.Point(281, 177);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 100);
+            this.panel3.Size = new System.Drawing.Size(233, 115);
             this.panel3.TabIndex = 30;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label14.Location = new System.Drawing.Point(71, 57);
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label14.Location = new System.Drawing.Point(83, 66);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(70, 24);
             this.label14.TabIndex = 33;
@@ -476,10 +512,11 @@ namespace CharacterCreator
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(3, 17);
+            this.label10.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label10.Location = new System.Drawing.Point(4, 20);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(164, 23);
+            this.label10.Size = new System.Drawing.Size(165, 23);
             this.label10.TabIndex = 26;
             this.label10.Text = "Физическая защита";
             // 
@@ -489,17 +526,19 @@ namespace CharacterCreator
             this.panel4.Controls.Add(this.label10);
             this.panel4.Controls.Add(this.label14);
             this.panel4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel4.Location = new System.Drawing.Point(35, 153);
+            this.panel4.Location = new System.Drawing.Point(41, 177);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(200, 100);
+            this.panel4.Size = new System.Drawing.Size(233, 115);
             this.panel4.TabIndex = 30;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label16.ForeColor = System.Drawing.Color.Blue;
-            this.label16.Location = new System.Drawing.Point(37, 9);
+            this.label16.Location = new System.Drawing.Point(43, 10);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(131, 20);
             this.label16.TabIndex = 31;
@@ -508,9 +547,10 @@ namespace CharacterCreator
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label18.ForeColor = System.Drawing.Color.Blue;
-            this.label18.Location = new System.Drawing.Point(72, 49);
+            this.label18.Location = new System.Drawing.Point(84, 57);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(70, 24);
             this.label18.TabIndex = 35;
@@ -522,17 +562,19 @@ namespace CharacterCreator
             this.panel5.Controls.Add(this.label18);
             this.panel5.Controls.Add(this.label16);
             this.panel5.ForeColor = System.Drawing.Color.White;
-            this.panel5.Location = new System.Drawing.Point(35, 268);
+            this.panel5.Location = new System.Drawing.Point(41, 309);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(200, 100);
+            this.panel5.Size = new System.Drawing.Size(233, 115);
             this.panel5.TabIndex = 33;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label17.ForeColor = System.Drawing.Color.Blue;
-            this.label17.Location = new System.Drawing.Point(0, 9);
+            this.label17.Location = new System.Drawing.Point(0, 10);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(197, 20);
             this.label17.TabIndex = 32;
@@ -541,9 +583,10 @@ namespace CharacterCreator
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label19.ForeColor = System.Drawing.Color.Blue;
-            this.label19.Location = new System.Drawing.Point(68, 49);
+            this.label19.Location = new System.Drawing.Point(79, 57);
+            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(70, 24);
             this.label19.TabIndex = 36;
@@ -555,28 +598,31 @@ namespace CharacterCreator
             this.panel6.Controls.Add(this.label19);
             this.panel6.Controls.Add(this.label17);
             this.panel6.ForeColor = System.Drawing.Color.White;
-            this.panel6.Location = new System.Drawing.Point(241, 268);
+            this.panel6.Location = new System.Drawing.Point(281, 309);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(200, 100);
+            this.panel6.Size = new System.Drawing.Size(233, 115);
             this.panel6.TabIndex = 34;
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label20.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label20.Location = new System.Drawing.Point(4, 7);
+            this.label20.Location = new System.Drawing.Point(5, 8);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(36, 16);
+            this.label20.Size = new System.Drawing.Size(35, 16);
             this.label20.TabIndex = 0;
             this.label20.Text = "HP : ";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(46, 10);
+            this.label22.Location = new System.Drawing.Point(54, 12);
+            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(41, 13);
+            this.label22.Size = new System.Drawing.Size(44, 15);
             this.label22.TabIndex = 1;
             this.label22.Text = "label22";
             this.label22.Click += new System.EventHandler(this.label22_Click);
@@ -586,28 +632,31 @@ namespace CharacterCreator
             this.panel7.BackColor = System.Drawing.Color.Blue;
             this.panel7.Controls.Add(this.label22);
             this.panel7.Controls.Add(this.label20);
-            this.panel7.Location = new System.Drawing.Point(35, 387);
+            this.panel7.Location = new System.Drawing.Point(41, 447);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(200, 31);
+            this.panel7.Size = new System.Drawing.Size(233, 36);
             this.panel7.TabIndex = 35;
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label21.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label21.Location = new System.Drawing.Point(4, 7);
+            this.label21.Location = new System.Drawing.Point(5, 8);
+            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(37, 16);
+            this.label21.Size = new System.Drawing.Size(36, 16);
             this.label21.TabIndex = 1;
             this.label21.Text = "MP : ";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(47, 9);
+            this.label23.Location = new System.Drawing.Point(55, 10);
+            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(41, 13);
+            this.label23.Size = new System.Drawing.Size(44, 15);
             this.label23.TabIndex = 2;
             this.label23.Text = "label23";
             // 
@@ -616,66 +665,87 @@ namespace CharacterCreator
             this.panel8.BackColor = System.Drawing.Color.Blue;
             this.panel8.Controls.Add(this.label23);
             this.panel8.Controls.Add(this.label21);
-            this.panel8.Location = new System.Drawing.Point(241, 387);
+            this.panel8.Location = new System.Drawing.Point(281, 447);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(200, 31);
+            this.panel8.Size = new System.Drawing.Size(233, 36);
             this.panel8.TabIndex = 36;
             // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(23, 19);
+            this.radioButton1.Location = new System.Drawing.Point(17, 72);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(85, 17);
+            this.radioButton1.Size = new System.Drawing.Size(68, 25);
             this.radioButton1.TabIndex = 0;
             this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
+            this.radioButton1.Text = "Плащ";
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(23, 62);
+            this.radioButton2.Location = new System.Drawing.Point(17, 103);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(85, 17);
+            this.radioButton2.Size = new System.Drawing.Size(163, 25);
             this.radioButton2.TabIndex = 1;
             this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
+            this.radioButton2.Text = "Кожанная накидка";
             this.radioButton2.UseVisualStyleBackColor = true;
             this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged_1);
             // 
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(23, 105);
+            this.radioButton3.Location = new System.Drawing.Point(17, 134);
+            this.radioButton3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(85, 17);
+            this.radioButton3.Size = new System.Drawing.Size(136, 25);
             this.radioButton3.TabIndex = 2;
             this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "radioButton3";
+            this.radioButton3.Text = "Тяжёлая броня";
             this.radioButton3.UseVisualStyleBackColor = true;
             this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged_1);
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.groupBox1.Controls.Add(this.label24);
             this.groupBox1.Controls.Add(this.radioButton3);
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Location = new System.Drawing.Point(35, 424);
+            this.groupBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.groupBox1.Location = new System.Drawing.Point(41, 489);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(403, 143);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.groupBox1.Size = new System.Drawing.Size(470, 165);
             this.groupBox1.TabIndex = 38;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label24.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label24.ForeColor = System.Drawing.Color.Fuchsia;
+            this.label24.Location = new System.Drawing.Point(17, 46);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(56, 23);
+            this.label24.TabIndex = 3;
+            this.label24.Text = "Броня";
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(1399, 579);
+            this.ClientSize = new System.Drawing.Size(1632, 668);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel7);
@@ -709,6 +779,7 @@ namespace CharacterCreator
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -793,6 +864,7 @@ namespace CharacterCreator
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label24;
     }
 }
 

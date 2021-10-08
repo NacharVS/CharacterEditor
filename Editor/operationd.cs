@@ -13,7 +13,7 @@ namespace CharacterCreator
         {
 
                 
-            if (1 < extraPoints || extraPoints < 20)
+            if (1 < extraPoints || extraPoints < 200)
             {
                 button.Enabled = true;
                 button1.Enabled = true;
@@ -23,7 +23,7 @@ namespace CharacterCreator
                 button5.Enabled = false;
                 button6.Enabled = false;
                 button7.Enabled = false;
-                if (extraPoints > 1 || extraPoints > 20) 
+                if (extraPoints > 1 || extraPoints > 200) 
                 {
                     button.Enabled = false;
                     button1.Enabled = false;
@@ -33,7 +33,7 @@ namespace CharacterCreator
                    button5.Enabled = true;
                    button6.Enabled = true;
                    button7.Enabled = true;
-                    if(1 < extraPoints && extraPoints < 19)
+                    if(1 < extraPoints && extraPoints < 199)
                     {
                         button.Enabled = true;
                         button1.Enabled = true;

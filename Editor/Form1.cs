@@ -26,7 +26,10 @@ namespace CharacterCreator
         int Walking_speed = 20;
         int HP = 100;
         int MP = 100;
+        int lvl = 1;
         
+
+
         public Form1()
         {
             InitializeComponent();
@@ -364,7 +367,7 @@ namespace CharacterCreator
             }
 
         }
-
+               
         private void Form1_Load(object sender, EventArgs e)
         {
             
@@ -553,30 +556,48 @@ namespace CharacterCreator
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButton1.Checked == true)
+            if (radioButton1.Checked == true /*&& lvl == 2*/)
             {
-                M_Degence += 10;
-                label15.Text = $"{M_Degence}";
+                
                 radioButton1.Enabled = false;
                 radioButton2.Enabled = true;
                 radioButton3.Enabled = true;
+
+                M_Degence += 10;
+                label15.Text = $"{M_Degence}";
+                P_Defence += 5;
+                label14.Text = $"{P_Defence}";
+                intelligence = intelligence + rnd;
+                textBox2.Text = $"{intelligence}";
+                MP += 5;
+                label23.Text = $"{MP}";
+                M_Attack += 5;
+                label13.Text = $"{M_Attack}";
+                P_Defence -= 3;
+                label14.Text = $"{P_Defence}";
+
+                /////////////////////////////
+                
+
             }
 
         }
 
         private void radioButton2_CheckedChanged_1(object sender, EventArgs e)
         {
-            if (radioButton2.Checked == true)
+            if (radioButton2.Checked == true /*&& lvl == 2*/)
             {
                 radioButton1.Enabled = true; 
                 radioButton2.Enabled = false;
                 radioButton3.Enabled = true;
+
+
             }
         }
 
         private void radioButton3_CheckedChanged_1(object sender, EventArgs e)
         {
-            if (radioButton3.Checked == true)
+            if (radioButton3.Checked == true /*&& lvl == 2*/)
             {
                 radioButton1.Enabled = true;
                 radioButton2.Enabled = true;
@@ -584,6 +605,9 @@ namespace CharacterCreator
             }
         }
 
-        
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
