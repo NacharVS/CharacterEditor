@@ -83,6 +83,8 @@ namespace CharacterCreator
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label24 = new System.Windows.Forms.Label();
+            this.button10 = new System.Windows.Forms.Button();
+            this.label25 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -591,6 +593,7 @@ namespace CharacterCreator
             this.label19.Size = new System.Drawing.Size(70, 24);
             this.label19.TabIndex = 36;
             this.label19.Text = "label19";
+            this.label19.Click += new System.EventHandler(this.label19_Click);
             // 
             // panel6
             // 
@@ -740,12 +743,34 @@ namespace CharacterCreator
             this.label24.TabIndex = 3;
             this.label24.Text = "Броня";
             // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(1041, 592);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(75, 23);
+            this.button10.TabIndex = 39;
+            this.button10.Text = "LVL UP";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click_1);
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(1041, 571);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(34, 15);
+            this.label25.TabIndex = 40;
+            this.label25.Text = "LVL 1";
+            this.label25.Click += new System.EventHandler(this.label25_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
             this.ClientSize = new System.Drawing.Size(1632, 668);
+            this.Controls.Add(this.label25);
+            this.Controls.Add(this.button10);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel7);
@@ -865,6 +890,8 @@ namespace CharacterCreator
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Label label25;
     }
 }
 

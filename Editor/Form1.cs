@@ -28,7 +28,10 @@ namespace CharacterCreator
         int MP = 100;
         int lvl = 1;
         
-
+     
+      
+     
+    
 
         public Form1()
         {
@@ -370,7 +373,7 @@ namespace CharacterCreator
                
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            label25.Text = $"{lvl}";
             label7.Text =  $"{dop}";
             pictureBox1.Visible = false;
             pictureBox2.Visible = false;
@@ -387,6 +390,14 @@ namespace CharacterCreator
             textBox2.Text = $"{intelligence}";
             textBox3.Text = $"{doxterity}";
             textBox4.Text = $"{strenght}";
+
+
+            if (lvl <= 2)
+            {
+                radioButton1.Enabled = false;
+                radioButton2.Enabled = false;
+                radioButton3.Enabled = false;
+            }
 
             if (radioButton1.Checked == true)
             {
@@ -556,28 +567,31 @@ namespace CharacterCreator
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButton1.Checked == true /*&& lvl == 2*/)
+            if (radioButton1.Checked == true && lvl >= 2)
             {
                 
                 radioButton1.Enabled = false;
-                radioButton2.Enabled = true;
-                radioButton3.Enabled = true;
+                radioButton2.Enabled = false;
+                radioButton3.Enabled = false;
 
                 M_Degence += 10;
                 label15.Text = $"{M_Degence}";
                 P_Defence += 5;
                 label14.Text = $"{P_Defence}";
-                intelligence = intelligence + rnd;
+                    Random rnd = new Random();
+                    int randoom = rnd.Next(1, 10);
+                    int randoom1 = rnd.Next(1, 10);
+                intelligence += randoom1 ;
                 textBox2.Text = $"{intelligence}";
-                MP += 5;
+                MP += randoom;
                 label23.Text = $"{MP}";
-                M_Attack += 5;
+                M_Attack += randoom;
                 label13.Text = $"{M_Attack}";
-                P_Defence -= 3;
+                P_Defence -=  randoom1;
                 label14.Text = $"{P_Defence}";
 
-                /////////////////////////////
                 
+                 
 
             }
 
@@ -585,27 +599,84 @@ namespace CharacterCreator
 
         private void radioButton2_CheckedChanged_1(object sender, EventArgs e)
         {
-            if (radioButton2.Checked == true /*&& lvl == 2*/)
+            if (radioButton2.Checked == true && lvl >= 2)
             {
-                radioButton1.Enabled = true; 
+                radioButton1.Enabled = false; 
                 radioButton2.Enabled = false;
-                radioButton3.Enabled = true;
+                radioButton3.Enabled = false;
 
+                P_Defence += 5;
+                label14.Text = $"{P_Defence}";
+                M_Degence += 5;
+                label15.Text = $"{M_Degence}";
+                    Random rnd = new Random();
+                    int randoom = rnd.Next(1, 10);
+                    int randoom1 = rnd.Next(1, 10);
+                doxterity += randoom ;
+                textBox3.Text = $"{doxterity}";
+                HP += randoom1;
+                MP += randoom;
+                label22.Text = $"{HP}";
+                label23.Text = $"{MP}";
+
+                    
+                
 
             }
         }
 
         private void radioButton3_CheckedChanged_1(object sender, EventArgs e)
         {
-            if (radioButton3.Checked == true /*&& lvl == 2*/)
+            if (radioButton3.Checked == true && lvl >= 2)
             {
-                radioButton1.Enabled = true;
-                radioButton2.Enabled = true;
+                radioButton1.Enabled = false;
+                radioButton2.Enabled = false;
                 radioButton3.Enabled = false;
+
+                P_Defence += 5;
+                label14.Text = $"{P_Defence}";
+                HP += 5;
+                label22.Text = $"{HP}";
+
+                    Random rnd = new Random();
+                    int randoom = rnd.Next(1, 10);
+                    int randoom1 = rnd.Next(1, 10);
+
+                strenght += randoom;
+                textBox4.Text = $"{strenght}";
+                constitution += randoom1;
+                textBox1.Text = $"{constitution}";
+                P_Defence += randoom;
+                label14.Text = $"{P_Defence}";
+                Walking_speed -= randoom1;
+                label19.Text = $"{Walking_speed}";
             }
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label19_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button10_Click_1(object sender, EventArgs e)
+        {
+            lvl += 1;
+            label25.Text = $"{lvl}";
+            if (lvl >= 2)
+            {
+                radioButton1.Enabled = true;
+                radioButton2.Enabled = true;
+                radioButton3.Enabled = true;
+            }
+            
+        }
+
+        private void label25_Click(object sender, EventArgs e)
         {
 
         }
