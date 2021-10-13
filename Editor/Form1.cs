@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MongoDB.Bson.Serialization.Attributes;
+using MongoDB.Driver;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,23 +14,28 @@ namespace CharacterCreator
 {
     public partial class Form1 : Form
     {
-        int strenght = 20;
-        int doxterity = 20;
-        int intelligence = 20;
-        int constitution = 20;
-        int hp;
-        int dop=200;
-        int P_Attack = 20;
-        int M_Attack = 20;
-        int P_Defence = 20;
-        int M_Degence = 20;
-        int Attack_Speed = 20;
-        int Walking_speed = 20;
-        int HP = 100;
-        int MP = 100;
-        int lvl = 1;
+        public int strenght = 20;
+        public int doxterity = 20;
+        public int intelligence = 20;
+        public int constitution = 20;
+        public int hp;
+        public int dop=200;
+        public int P_Attack = 20;
+        public int M_Attack = 20;
+        public int P_Defence = 20;
+        public int M_Degence = 20;
+        public int Attack_Speed = 20;
+        public int Walking_speed = 20;
+        public int HP = 100;
+        public int MP = 100;
+        public int lvl = 1;
+
+
+       
         
-     
+        
+
+        
       
      
     
@@ -75,6 +82,9 @@ namespace CharacterCreator
                 pictureBox2.Visible = false;
                 pictureBox3.Visible = false;
                 comboBox1.Enabled = false;
+
+                
+
                 if (strenght <= 30 && constitution <= 25 && intelligence <= 10 && comboBox1.Text == "Warrior")
                 {
                     button2.Enabled = false;
@@ -549,8 +559,21 @@ namespace CharacterCreator
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
+            if (comboBox1.Text == "Warrior")
+            {
+                Editor.Warrior warrior = new Editor.Warrior(strenght, doxterity);
+                AddToDataBase(warrior);
+            }
         }
+
+                                public void AddToDataBase(Editor.Warrior personaj)
+                                {
+                                    var client = new MongoClient("mongodb://localhost");
+                                    var db = client.GetDatabase("Ilyas");
+                                    var collection = db.GetCollection<Editor.Warrior>("Hero_2");
+                                    collection.InsertOne(personaj);
+                                }
+
 
         private void Form1_MouseClick(object sender, MouseEventArgs e)
         {
