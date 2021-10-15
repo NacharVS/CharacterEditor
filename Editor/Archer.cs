@@ -4,9 +4,9 @@ using System.Text;
 
 namespace Editor
 {
-   public class Warrior
+    public class Archer
     {
-        public Warrior(string nameclass,int str, int dox, int intelegence, int constit ,  int p_damage, int m_damage, int lvl)
+        public Archer(string nameclass,int str, int dox, int intelegence, int constit, int p_damage,int m_damage, int lvl)
         {
             strenght = str;
             this.dox = dox;

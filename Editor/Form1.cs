@@ -561,16 +561,39 @@ namespace CharacterCreator
         {
             if (comboBox1.Text == "Warrior")
             {
-                Editor.Warrior warrior = new Editor.Warrior(strenght, doxterity);
+                Editor.Warrior warrior = new Editor.Warrior("Warrior",strenght, doxterity, intelligence, constitution,  P_Attack, M_Attack,lvl);
                 AddToDataBase(warrior);
             }
+            if (comboBox1.Text == "Mage")
+            {
+                Editor.Mage mage = new Editor.Mage("Mage",strenght, doxterity, intelligence, constitution,  P_Attack, M_Attack,lvl);
+                AddToDataBase(mage);
+            }
+            if (comboBox1.Text == "Archer")
+            {
+                Editor.Archer arch = new Editor.Archer("Archer",strenght, doxterity, intelligence, constitution,  P_Attack,M_Attack,lvl);
+                AddToDataBase(arch);
+            }
         }
-
+                                public void AddToDataBase(Editor.Mage personaj)
+                                {
+                                  var client = new MongoClient("mongodb://localhost");
+                                  var db = client.GetDatabase("Ilyas");
+                                  var collection = db.GetCollection<Editor.Mage>("Hero_2");
+                                  collection.InsertOne(personaj);
+                                }
                                 public void AddToDataBase(Editor.Warrior personaj)
                                 {
                                     var client = new MongoClient("mongodb://localhost");
                                     var db = client.GetDatabase("Ilyas");
                                     var collection = db.GetCollection<Editor.Warrior>("Hero_2");
+                                    collection.InsertOne(personaj);
+                                }
+                                public void AddToDataBase(Editor.Archer personaj)
+                                {
+                                    var client = new MongoClient("mongodb://localhost");
+                                    var db = client.GetDatabase("Ilyas");
+                                    var collection = db.GetCollection<Editor.Archer>("Hero_2");
                                     collection.InsertOne(personaj);
                                 }
 
@@ -612,10 +635,7 @@ namespace CharacterCreator
                 label13.Text = $"{M_Attack}";
                 P_Defence -=  randoom1;
                 label14.Text = $"{P_Defence}";
-
                 
-                 
-
             }
 
         }
@@ -641,9 +661,9 @@ namespace CharacterCreator
                 MP += randoom;
                 label22.Text = $"{HP}";
                 label23.Text = $"{MP}";
-
-                    
                 
+
+
 
             }
         }
@@ -673,6 +693,7 @@ namespace CharacterCreator
                 label14.Text = $"{P_Defence}";
                 Walking_speed -= randoom1;
                 label19.Text = $"{Walking_speed}";
+                
             }
         }
 
@@ -700,6 +721,16 @@ namespace CharacterCreator
         }
 
         private void label25_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label24_Click(object sender, EventArgs e)
         {
 
         }

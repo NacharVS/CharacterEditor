@@ -677,7 +677,7 @@ namespace CharacterCreator
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(17, 72);
+            this.radioButton1.Location = new System.Drawing.Point(30, 53);
             this.radioButton1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(68, 25);
@@ -690,7 +690,7 @@ namespace CharacterCreator
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(17, 103);
+            this.radioButton2.Location = new System.Drawing.Point(30, 84);
             this.radioButton2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(163, 25);
@@ -703,7 +703,7 @@ namespace CharacterCreator
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(17, 134);
+            this.radioButton3.Location = new System.Drawing.Point(30, 115);
             this.radioButton3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(136, 25);
@@ -722,11 +722,11 @@ namespace CharacterCreator
             this.groupBox1.Controls.Add(this.radioButton1);
             this.groupBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox1.Location = new System.Drawing.Point(41, 489);
+            this.groupBox1.Location = new System.Drawing.Point(41, 501);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupBox1.Size = new System.Drawing.Size(470, 165);
+            this.groupBox1.Size = new System.Drawing.Size(470, 153);
             this.groupBox1.TabIndex = 38;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
@@ -737,11 +737,12 @@ namespace CharacterCreator
             this.label24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label24.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label24.ForeColor = System.Drawing.Color.Fuchsia;
-            this.label24.Location = new System.Drawing.Point(17, 46);
+            this.label24.Location = new System.Drawing.Point(43, 25);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(56, 23);
             this.label24.TabIndex = 3;
             this.label24.Text = "Броня";
+            this.label24.Click += new System.EventHandler(this.label24_Click);
             // 
             // button10
             // 
