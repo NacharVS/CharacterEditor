@@ -19,7 +19,7 @@ namespace CharacterCreator
         public int intelligence = 20;
         public int constitution = 20;
         public int hp;
-        public int dop=200;
+        public int dop=20;
         public int P_Attack = 20;
         public int M_Attack = 20;
         public int P_Defence = 20;
@@ -400,8 +400,17 @@ namespace CharacterCreator
             textBox2.Text = $"{intelligence}";
             textBox3.Text = $"{doxterity}";
             textBox4.Text = $"{strenght}";
+            progressBar1.Minimum = 0;
+            progressBar1.Maximum = 100;
+            button10.Enabled = false;
 
 
+
+
+            if (lvl <= 2)
+            {
+                pictureBox4.Image = Image.FromFile(@"C:\Users\231901\Documents\repos\CharacterEditor\Editor\Resources\vrag.jpg");
+            }
             if (lvl <= 2)
             {
                 radioButton1.Enabled = false;
@@ -414,7 +423,7 @@ namespace CharacterCreator
                 M_Degence += 10;
                 label15.Text = $"{M_Degence}";
             }
-
+            
         }
 
         private void button10_Click(object sender, EventArgs e)
@@ -710,14 +719,35 @@ namespace CharacterCreator
         private void button10_Click_1(object sender, EventArgs e)
         {
             lvl += 1;
+            dop += 5;
+            label7.Text = $"{dop}";
             label25.Text = $"{lvl}";
+            button10.Enabled = false;
+            progressBar1.Value = 0;
+            progressBar1.Maximum = (progressBar1.Maximum * 2) + (progressBar1.Maximum % 5); 
             if (lvl >= 2)
             {
                 radioButton1.Enabled = true;
                 radioButton2.Enabled = true;
                 radioButton3.Enabled = true;
             }
-            
+            if (lvl == 2)
+            {
+                pictureBox4.Image = Image.FromFile(@"C:\Users\231901\Documents\repos\CharacterEditor\Editor\Resources\vrag.jpg");
+            }
+            if (lvl == 5)
+            {
+                pictureBox4.Image = Image.FromFile(@"C:\Users\231901\Documents\repos\CharacterEditor\Editor\Resources\vrag2.jpg");
+            }
+            if (lvl > 5)
+            {
+                pictureBox4.Image = Image.FromFile(@"C:\Users\231901\Documents\repos\CharacterEditor\Editor\Resources\vrag3.jpg");
+            }
+            if (lvl == 7)
+            {
+                pictureBox4.Image = Image.FromFile(@"C:\Users\231901\Documents\repos\CharacterEditor\Editor\Resources\Boss.jpg");
+            }
+
         }
 
         private void label25_Click(object sender, EventArgs e)
@@ -733,6 +763,36 @@ namespace CharacterCreator
         private void label24_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void progressBar1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            
+           
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                progressBar1.Value += 20;
+                if (progressBar1.Maximum == progressBar1.Value)
+                {
+                    button10.Enabled = true;
+
+                }
+            }
+            catch
+            {
+                Editor.dop_okno okoshko = new Editor.dop_okno();
+                okoshko.Show();
+            }
         }
     }
 }
