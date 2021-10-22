@@ -734,17 +734,21 @@ namespace CharacterCreator
             if (lvl == 2)
             {
                 pictureBox4.Image = Image.FromFile(@"C:\Users\231901\Documents\repos\CharacterEditor\Editor\Resources\vrag.jpg");
+                
             }
             if (lvl == 5)
             {
+                label29.Text = "Жук-бабочка 2 lvl";
                 pictureBox4.Image = Image.FromFile(@"C:\Users\231901\Documents\repos\CharacterEditor\Editor\Resources\vrag2.jpg");
             }
             if (lvl > 5)
             {
+                label29.Text = "Жук-бомба";
                 pictureBox4.Image = Image.FromFile(@"C:\Users\231901\Documents\repos\CharacterEditor\Editor\Resources\vrag3.jpg");
             }
             if (lvl == 7)
             {
+                label29.Text = "ЖУК-БОСС!!!";
                 pictureBox4.Image = Image.FromFile(@"C:\Users\231901\Documents\repos\CharacterEditor\Editor\Resources\Boss.jpg");
             }
 

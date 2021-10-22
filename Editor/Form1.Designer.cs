@@ -90,6 +90,8 @@ namespace CharacterCreator
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -802,7 +804,7 @@ namespace CharacterCreator
             this.pictureBox4.BackColor = System.Drawing.Color.LightGreen;
             this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.pictureBox4.Location = new System.Drawing.Point(1167, 429);
+            this.pictureBox4.Location = new System.Drawing.Point(1092, 429);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(252, 225);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -815,7 +817,7 @@ namespace CharacterCreator
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Snap ITC", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label27.ForeColor = System.Drawing.Color.Red;
-            this.label27.Location = new System.Drawing.Point(1210, 401);
+            this.label27.Location = new System.Drawing.Point(1129, 401);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(174, 25);
             this.label27.TabIndex = 45;
@@ -832,12 +834,34 @@ namespace CharacterCreator
             this.label28.TabIndex = 46;
             this.label28.Text = "Опыт:";
             // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.BackColor = System.Drawing.Color.Chartreuse;
+            this.label29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label29.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label29.Location = new System.Drawing.Point(1350, 429);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(126, 22);
+            this.label29.TabIndex = 47;
+            this.label29.Text = "Таракан 1 lvl";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(1499, 429);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(0, 15);
+            this.label30.TabIndex = 48;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
             this.ClientSize = new System.Drawing.Size(1632, 668);
+            this.Controls.Add(this.label30);
+            this.Controls.Add(this.label29);
             this.Controls.Add(this.label28);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.pictureBox4);
@@ -972,6 +996,8 @@ namespace CharacterCreator
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
     }
 }
 
