@@ -644,7 +644,21 @@ namespace CharacterCreator
                 label13.Text = $"{M_Attack}";
                 P_Defence -=  randoom1;
                 label14.Text = $"{P_Defence}";
-                
+
+                if (radioButton3.Checked == true)
+                {
+                    P_Defence -= 5;
+                    label14.Text = $"{P_Defence}";
+                    HP -= 5;
+                    label22.Text = $"{HP}";
+                }
+                if (radioButton2.Checked == true)
+                {
+                    P_Defence -= 5;
+                    label14.Text = $"{P_Defence}";
+                    M_Degence -= 5;
+                    label15.Text = $"{M_Degence}";
+                }
             }
 
         }
@@ -670,8 +684,20 @@ namespace CharacterCreator
                 MP += randoom;
                 label22.Text = $"{HP}";
                 label23.Text = $"{MP}";
-                
-
+                        if (radioButton3.Checked == true)
+                        {
+                            P_Defence -= 5;
+                            label14.Text = $"{P_Defence}";
+                            HP -= 5;
+                            label22.Text = $"{HP}";
+                        }
+                        if (radioButton1.Checked == true)
+                        {
+                            M_Degence -= 10;
+                            label15.Text = $"{M_Degence}";
+                            P_Defence -= 5;
+                            label14.Text = $"{P_Defence}";
+                        }
 
 
             }
@@ -702,7 +728,21 @@ namespace CharacterCreator
                 label14.Text = $"{P_Defence}";
                 Walking_speed -= randoom1;
                 label19.Text = $"{Walking_speed}";
-                
+
+                if (radioButton1.Checked == true)
+                {
+                    M_Degence -= 10;
+                    label15.Text = $"{M_Degence}";
+                    P_Defence -= 5;
+                    label14.Text = $"{P_Defence}";
+                }
+                if (radioButton2.Checked == true)
+                {
+                    P_Defence -= 5;
+                    label14.Text = $"{P_Defence}";
+                    M_Degence -= 5;
+                    label15.Text = $"{M_Degence}";
+                }
             }
         }
 
@@ -725,16 +765,29 @@ namespace CharacterCreator
             button10.Enabled = false;
             progressBar1.Value = 0;
             progressBar1.Maximum = (progressBar1.Maximum * 2) + (progressBar1.Maximum % 5); 
-            if (lvl >= 2)
+            if (lvl == 2)
+            {
+                radioButton1.Enabled = true;
+                radioButton2.Enabled = false;
+                radioButton3.Enabled = false;
+            }
+            if (lvl == 3)
+            {
+                radioButton1.Enabled = true;
+                radioButton2.Enabled = true;
+                radioButton3.Enabled = false;
+            }
+            if (lvl == 4)
             {
                 radioButton1.Enabled = true;
                 radioButton2.Enabled = true;
                 radioButton3.Enabled = true;
             }
-            if (lvl == 2)
+            //Monsters//////////////////////////////////////
+            if (lvl >= 1)
             {
                 pictureBox4.Image = Image.FromFile(@"C:\Users\231901\Documents\repos\CharacterEditor\Editor\Resources\vrag.jpg");
-                
+                label29.Text = "Таракан 1 lvl";
             }
             if (lvl == 5)
             {
@@ -751,7 +804,33 @@ namespace CharacterCreator
                 label29.Text = "ЖУК-БОСС!!!";
                 pictureBox4.Image = Image.FromFile(@"C:\Users\231901\Documents\repos\CharacterEditor\Editor\Resources\Boss.jpg");
             }
+            /////////////////////////////////////////////////
 
+            if (strenght <=20)
+            {
+                radioButton3.Enabled = false;
+            }
+            else
+            {
+                radioButton3.Enabled = true;
+            }
+
+            if (intelligence <= 10 )
+            {
+                radioButton1.Enabled = false;
+            }
+            else
+            {
+                radioButton1.Enabled = true;
+            }
+            if (doxterity <= 10)
+            {
+                radioButton2.Enabled = false;
+            }
+            else
+            {
+                radioButton2.Enabled = true;
+            }
         }
 
         private void label25_Click(object sender, EventArgs e)
@@ -791,6 +870,7 @@ namespace CharacterCreator
                     button10.Enabled = true;
 
                 }
+                
             }
             catch
             {
