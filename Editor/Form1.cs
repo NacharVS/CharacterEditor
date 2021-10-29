@@ -403,6 +403,7 @@ namespace CharacterCreator
             progressBar1.Minimum = 0;
             progressBar1.Maximum = 100;
             button10.Enabled = false;
+            pictureBox5.Visible = false;
 
 
 
@@ -764,7 +765,9 @@ namespace CharacterCreator
             label25.Text = $"{lvl}";
             button10.Enabled = false;
             progressBar1.Value = 0;
-            progressBar1.Maximum = (progressBar1.Maximum * 2) + (progressBar1.Maximum % 5); 
+            progressBar1.Maximum = (progressBar1.Maximum * 2) + (progressBar1.Maximum % 5);
+            pictureBox5.Visible = false;
+
             if (lvl == 2)
             {
                 radioButton1.Enabled = true;
@@ -863,20 +866,29 @@ namespace CharacterCreator
         {
             try
             {
-
                 progressBar1.Value += 20;
                 if (progressBar1.Maximum == progressBar1.Value)
                 {
                     button10.Enabled = true;
-
+                    pictureBox5.Visible = true;
                 }
-                
             }
             catch
             {
                 Editor.dop_okno okoshko = new Editor.dop_okno();
                 okoshko.Show();
+                
             }
+        }
+
+        private void button11_Click_1(object sender, EventArgs e)
+        {
+            Editor.dop_okno1 okoshko1 = new Editor.dop_okno1();
+            okoshko1.ShowDialog();
+            M_Attack += okoshko1.m_uron + (strenght * 1/2)*(doxterity * 1 / 2);
+            P_Attack += okoshko1.p_uron +(M_Attack * 4 / 10) ;
+            label12.Text = $"{P_Attack}";
+            label13.Text = $"{M_Attack}";
         }
     }
 }

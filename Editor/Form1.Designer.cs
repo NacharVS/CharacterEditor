@@ -92,6 +92,8 @@ namespace CharacterCreator
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
+            this.button11 = new System.Windows.Forms.Button();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -105,6 +107,7 @@ namespace CharacterCreator
             this.panel8.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -762,9 +765,9 @@ namespace CharacterCreator
             // 
             this.button10.BackColor = System.Drawing.Color.White;
             this.button10.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button10.Location = new System.Drawing.Point(993, 566);
+            this.button10.Location = new System.Drawing.Point(993, 570);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(62, 44);
+            this.button10.Size = new System.Drawing.Size(93, 44);
             this.button10.TabIndex = 39;
             this.button10.Text = "LVL UP";
             this.button10.UseVisualStyleBackColor = false;
@@ -774,7 +777,7 @@ namespace CharacterCreator
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label25.Location = new System.Drawing.Point(996, 541);
+            this.label25.Location = new System.Drawing.Point(1013, 547);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(51, 20);
             this.label25.TabIndex = 40;
@@ -854,12 +857,37 @@ namespace CharacterCreator
             this.label30.Size = new System.Drawing.Size(0, 15);
             this.label30.TabIndex = 48;
             // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.Blue;
+            this.button11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button11.Location = new System.Drawing.Point(281, 501);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(228, 46);
+            this.button11.TabIndex = 49;
+            this.button11.Text = "Инвертарь оружия";
+            this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click_1);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(986, 616);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 50;
+            this.pictureBox5.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(1632, 668);
+            this.ClientSize = new System.Drawing.Size(1512, 808);
+            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.button11);
             this.Controls.Add(this.label30);
             this.Controls.Add(this.label29);
             this.Controls.Add(this.label28);
@@ -929,6 +957,7 @@ namespace CharacterCreator
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -998,6 +1027,8 @@ namespace CharacterCreator
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }
 
