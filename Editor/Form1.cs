@@ -18,7 +18,7 @@ namespace CharacterCreator
         public int doxterity = 20;
         public int intelligence = 20;
         public int constitution = 20;
-        public int hp;
+       
         public int dop=20;
         public int P_Attack = 20;
         public int M_Attack = 20;
@@ -404,6 +404,7 @@ namespace CharacterCreator
             progressBar1.Maximum = 100;
             button10.Enabled = false;
             pictureBox5.Visible = false;
+            timer1.Enabled = false;
 
 
 
@@ -866,9 +867,13 @@ namespace CharacterCreator
         {
             try
             {
+
                 progressBar1.Value += 20;
+                
+                timer1.Enabled = true;
                 if (progressBar1.Maximum == progressBar1.Value)
-                {
+                {   
+                    timer1.Enabled = false;
                     button10.Enabled = true;
                     pictureBox5.Visible = true;
                 }
@@ -889,6 +894,35 @@ namespace CharacterCreator
             P_Attack += okoshko1.p_uron +(M_Attack * 4 / 10) ;
             label12.Text = $"{P_Attack}";
             label13.Text = $"{M_Attack}";
+        }
+
+        
+
+      
+        private void InitializeTimer()
+        {
+           
+            timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+        }
+        void timer1_Tick(object sender, EventArgs e)
+        { 
+            timer1.Interval = 10000;
+            if (lvl < 3)
+            {
+                HP -= 5;
+                label22.Text = $"{HP}";
+            }
+            if (lvl>3 && lvl < 5)
+            {
+                HP -=15;
+                label22.Text = $"{HP}";
+            }
+            if (lvl > 5 )
+            {
+                HP -= 20;
+                label22.Text = $"{HP}";
+            }
         }
     }
 }
