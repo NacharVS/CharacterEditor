@@ -407,7 +407,7 @@ namespace CharacterCreator
             timer1.Enabled = false;
 
 
-
+            
 
             if (lvl <= 2)
             {
@@ -808,6 +808,11 @@ namespace CharacterCreator
                 label29.Text = "ЖУК-БОСС!!!";
                 pictureBox4.Image = Image.FromFile(@"C:\Users\231901\Documents\repos\CharacterEditor\Editor\Resources\Boss.jpg");
             }
+            if (lvl == 8)
+            {
+                label29.Text = "ЖУК-BoriS";
+                pictureBox4.Image = Image.FromFile(@"C:\Users\231901\Documents\repos\CharacterEditor\Editor\Resources\zhuk-Boris.gif");
+            }
             /////////////////////////////////////////////////
 
             if (strenght <=20)
@@ -888,7 +893,7 @@ namespace CharacterCreator
 
         private void button11_Click_1(object sender, EventArgs e)
         {
-            Editor.dop_okno1 okoshko1 = new Editor.dop_okno1();
+            Editor.Inventar_oruzhiya okoshko1 = new Editor.Inventar_oruzhiya();
             okoshko1.ShowDialog();
             M_Attack += okoshko1.m_uron + (strenght * 1/2)*(doxterity * 1 / 2);
             P_Attack += okoshko1.p_uron +(M_Attack * 4 / 10) ;
@@ -907,7 +912,7 @@ namespace CharacterCreator
         }
         void timer1_Tick(object sender, EventArgs e)
         { 
-            timer1.Interval = 10000;
+            timer1.Interval = 1000;
             if (lvl < 3)
             {
                 HP -= 5;
@@ -923,6 +928,22 @@ namespace CharacterCreator
                 HP -= 20;
                 label22.Text = $"{HP}";
             }
+            if (HP == 0)
+            {
+                Editor.Smert_ smert_ = new Editor.Smert_();
+                smert_.Show();
+                timer1.Enabled = false;
+            }
+        }
+
+        private void label20_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

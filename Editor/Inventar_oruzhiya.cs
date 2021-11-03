@@ -8,12 +8,12 @@ using System.Windows.Forms;
 
 namespace Editor
 {
-    public partial class dop_okno1 : Form
+    public partial class Inventar_oruzhiya : Form
     {
         public int m_uron;
         public int p_uron;
         public int critical_chance = 5;
-        public dop_okno1()
+        public Inventar_oruzhiya()
         {
             InitializeComponent();
         }
@@ -116,6 +116,11 @@ namespace Editor
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 namespace Editor
 {
-    partial class dop_okno1
+    partial class Inventar_oruzhiya
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Editor
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dop_okno1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inventar_oruzhiya));
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -207,8 +207,9 @@ namespace Editor
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 11;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // dop_okno1
+            // Inventar_oruzhiya
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -225,7 +226,7 @@ namespace Editor
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox2);
             this.DoubleBuffered = true;
-            this.Name = "dop_okno1";
+            this.Name = "Inventar_oruzhiya";
             this.Text = "dop_okno1";
             this.Load += new System.EventHandler(this.dop_okno1_Load);
             this.groupBox1.ResumeLayout(false);

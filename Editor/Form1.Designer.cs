@@ -479,6 +479,7 @@ namespace CharacterCreator
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(233, 115);
             this.panel2.TabIndex = 29;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label11
             // 
@@ -633,6 +634,7 @@ namespace CharacterCreator
             this.label20.Size = new System.Drawing.Size(35, 16);
             this.label20.TabIndex = 0;
             this.label20.Text = "HP : ";
+            this.label20.Click += new System.EventHandler(this.label20_Click);
             // 
             // label22
             // 

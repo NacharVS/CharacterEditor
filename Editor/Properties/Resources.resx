@@ -121,6 +121,9 @@
   <data name="inventar2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\inventar2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="You-Died-Gif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\You-Died-Gif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="warrior" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\warrior.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -136,8 +139,8 @@
   <data name="inventar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\inventar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="vrag" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\vrag.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fon.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="vlup" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vlup.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,6 +157,9 @@
   <data name="mech" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mech.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="vrag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vrag.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="inventar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\inventar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -166,7 +172,7 @@
   <data name="posoh" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\posoh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fon.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="zhuk-Boris" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zhuk-Boris.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
